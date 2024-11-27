@@ -23,7 +23,7 @@ def read_root():
     return {"Hello": "Chenzhi Lu"}
 
 # 带路径参数的路由
-@app.get("/uni/{cl4407}")
+@app.get("/uni/{uni_id}")
 def read_item(uni_id: str, q: Union[str, None] = None):
     return {"uni_id": uni_id, "q": q}
 
